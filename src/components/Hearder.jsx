@@ -2,16 +2,16 @@ import React from 'react';
 import logo from '../images/logo.svg'
 
 function Header() {
-  const link = 'https://github.com/matheuscarvalhoscm/sunnyside-agency'
+  const Repolink = 'https://github.com/matheuscarvalhoscm/sunnyside-agency';
+  const links = ['About', 'Services', 'Projects', 'Contact'];
 
   return(
     <div className="header">
       <img src={ logo } alt="sunnyside-agency-logo" />
       <div className="links">
-        <a href={ link }>About</a>
-        <a href={ link }>Services</a>
-        <a href={ link }>Projects</a>
-        <a href={ link }>Contact</a>
+        { links.map((link) => (
+          <a href={ Repolink }> { link } </a>
+        ))}
       </div>
     </div>
   );
