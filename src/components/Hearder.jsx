@@ -9,8 +9,8 @@ function Header() {
     <div className="header">
       <img src={ logo } alt="sunnyside-agency-logo" />
       <div className="links">
-        { links.map((link) => (
-          <a href={ Repolink }> { link } </a>
+        { links.map((link, index) => (
+          <a key={ index } href={ Repolink }> { link } </a>
         ))}
       </div>
     </div>
