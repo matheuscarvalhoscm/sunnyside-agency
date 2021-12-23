@@ -40,7 +40,7 @@ a {
 .first-section {
   background: url('./images/desktop/image-header.jpg') no-repeat center fixed;
   background-size: cover;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
 }
 
