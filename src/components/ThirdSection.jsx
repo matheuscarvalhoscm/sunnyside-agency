@@ -15,7 +15,7 @@ function ThirdSection() {
       </div>
       <div className="photography-container">
         <div className="photography-text-box">
-          <h2>Photograpy</h2>
+          <h2>Photography</h2>
           <p>
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
