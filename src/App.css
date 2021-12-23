@@ -3,8 +3,8 @@
 
 :root {
   /* Primary */
-  --soft-red: hsl(7, 99%, 70%);
-  --yellow: hsl(51, 100%, 49%);
+  --soft-red: hsla(7, 99%, 70%, 0.452);
+  --yellow: hsl(51, 100%, 49%, 0.452);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-moderate-cyan: hsl(138, 34%, 41%);
 
@@ -76,7 +76,7 @@ a {
   font-family: 'Fraunces', serif;
   font-weight: bold;
   font-size: 36px;
-  padding: 20px 50px;
+  padding: 20px 100px;
   width: 60%;
 }
 
@@ -84,7 +84,7 @@ a {
   color: var(--very-dark-grayish-blue);
   font-family: 'Barlow', sans-serif;
   font-weight: lighter;
-  padding: 0px 50px;
+  padding: 0px 100px;
   width: 65%;
   white-space: normal;
 }
@@ -93,17 +93,73 @@ a {
   color: var(--very-dark-desaturated-blue);
   font-family: 'Fraunces', serif;
   width: 114px;
-  padding: 10px 30px;
+  padding: 10px 80px;
 }
 
 .second-section-first-link {
-  text-decoration: underline var(--yellow);
+  text-decoration: underline 5px var(--yellow);
 }
 
 .second-section-second-link {
-  text-decoration: underline var(--soft-red);
+  text-decoration: underline 5px var(--soft-red);
+}
+
+.second-section-text-box a {
+  text-underline-offset: -0.21em;
 }
 
 .second-section img {
   width: 50%;
+}
+
+.third-section {
+  display: flex;
+  height: 80vh;
+}
+
+.graphic-design-container {
+  background-image: url('./images/desktop/image-graphic-design.jpg');
+}
+
+.photography-container {
+  background-image: url('./images//desktop/image-photography.jpg');
+}
+
+.graphic-design-container, .photography-container {
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.graphic-design-text-box, .photography-text-box {
+  margin-left: 20%;
+  margin-top: 50%;
+  width: 60%;
+}
+
+.third-section h2, .third-section p {
+  text-align: center;
+  padding: 10px;
+}
+
+.graphic-design-container h2 {
+  color: var(--dark-desaturated-cyan);
+  font-family: 'Fraunces', serif;
+  font-weight: bolder;
+}
+
+.graphic-design-container p {
+  color: var(--dark-moderate-cyan);
+  font-family: 'Barlow', sans-serif;
+}
+
+.photography-container h2 {
+  color: var(--very-dark-desaturated-blue);
+  font-family: 'Fraunces', serif;
+  font-weight: bolder;
+}
+
+.photography-container p {
+  color: var(--very-dark-grayish-blue);
+  font-family: 'Barlow', sans-serif;
 }
