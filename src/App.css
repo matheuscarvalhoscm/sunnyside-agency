@@ -3,8 +3,8 @@
 
 :root {
   /* Primary */
-  --soft-red: hsl(7, 99%, 70%);
-  --yellow: hsl(51, 100%, 49%);
+  --soft-red: hsla(7, 99%, 70%, 0.452);
+  --yellow: hsl(51, 100%, 49%, 0.452);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-moderate-cyan: hsl(138, 34%, 41%);
 
@@ -97,11 +97,15 @@ a {
 }
 
 .second-section-first-link {
-  text-decoration: underline var(--yellow);
+  text-decoration: underline 5px var(--yellow);
 }
 
 .second-section-second-link {
-  text-decoration: underline var(--soft-red);
+  text-decoration: underline 5px var(--soft-red);
+}
+
+.second-section-text-box a {
+  text-underline-offset: -0.2em;
 }
 
 .second-section img {
