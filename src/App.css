@@ -76,7 +76,7 @@ a {
   font-family: 'Fraunces', serif;
   font-weight: bold;
   font-size: 36px;
-  padding: 20px 50px;
+  padding: 20px 100px;
   width: 60%;
 }
 
@@ -84,7 +84,7 @@ a {
   color: var(--very-dark-grayish-blue);
   font-family: 'Barlow', sans-serif;
   font-weight: lighter;
-  padding: 0px 50px;
+  padding: 0px 100px;
   width: 65%;
   white-space: normal;
 }
@@ -93,7 +93,7 @@ a {
   color: var(--very-dark-desaturated-blue);
   font-family: 'Fraunces', serif;
   width: 114px;
-  padding: 10px 30px;
+  padding: 10px 80px;
 }
 
 .second-section-first-link {
