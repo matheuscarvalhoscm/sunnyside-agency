@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  /* Primary */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-moderate-cyan: hsl(138, 34%, 41%);
+
+  /* Neutral */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  font-family: 'Barlow', 'Fraunces';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.links {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first-section {
+  background: url('./images/desktop/image-header.jpg') no-repeat center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-text {
+  color: var(--white);
+  font-family: 'Fraunces', sans-serif;
+  font-size: 46px;
+  font-weight: bolder;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.hero-arrow-down {
+  margin-top: 60px;
+  margin-left: 50%;
+  margin-right: auto;
+}
+
+.second-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second-section-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.second-section-text-box h2 {
+  color: var(--very-dark-desaturated-blue);
+  font-family: 'Fraunces', serif;
+  font-weight: bold;
+  font-size: 36px;
+  padding: 20px 50px;
+  width: 60%;
+}
+
+.second-section-text-box p {
+  color: var(--very-dark-grayish-blue);
+  font-family: 'Barlow', sans-serif;
+  font-weight: lighter;
+  padding: 0px 50px;
+  width: 65%;
+  white-space: normal;
+}
+
+.second-section-text-box a {
+  color: var(--very-dark-desaturated-blue);
+  font-family: 'Fraunces', serif;
+  width: 114px;
+  padding: 10px 30px;
+}
+
+.second-section-first-link {
+  text-decoration: underline var(--yellow);
+}
+
+.second-section-second-link {
+  text-decoration: underline var(--soft-red);
+}
+
+.second-section img {
+  width: 50%;
 }
