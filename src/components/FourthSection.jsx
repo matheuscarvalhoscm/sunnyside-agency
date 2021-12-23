@@ -8,10 +8,10 @@ function FourthSection() {
       <div className="testimonials-container">
         {testimonials.map(({ name, position, text, image }, index) => (
           <div className="testimonial-container" key={index}>
-            <img src={image} alt={`${name} photo `} />
-            <p>{text}</p>
-            <h3>{name}</h3>
-            <h5>{position}</h5>
+            <img src={ image } alt={`${name}`} />
+            <p>{ text }</p>
+            <h3>{ name }</h3>
+            <h5>{ position }</h5>
           </div>
         ))}
       </div>
