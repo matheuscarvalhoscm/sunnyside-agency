@@ -7,6 +7,7 @@
   --yellow: hsl(51, 100%, 49%, 0.452);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-moderate-cyan: hsl(138, 34%, 41%);
+  --light-moderate-cyan: #90d4c5;
 
   /* Neutral */
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -178,7 +179,7 @@ a {
 
 .testimonials-container {
   display: grid;
-  grid-column-gap: 24px;
+  grid-column-gap: 50px;
   grid-row-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -214,4 +215,52 @@ a {
   font-family: 'Barlow', sans-serif;
   font-weight: lighter;
   text-align: center;
+}
+
+.fifth-section {
+  display: flex;
+}
+
+.fifth-section img {
+  width: 25%;
+}
+
+.sixth-section {
+  display: flex;
+  background-color: var(--light-moderate-cyan);
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  fill: var(--dark-desaturated-cyan);
+  text-align: center;
+  width: 150px;
+  padding-top: 80px;
+}
+
+.logo {
+  background-color: var(--dark-desaturated-cyan);
+  -webkit-mask: url('./images/logo.svg') no-repeat center;
+  mask: url('./images/logo.svg') no-repeat center;
+  margin-top: 50px;
+}
+
+.links-container {
+  padding-bottom: 30px;
+}
+
+.social-media-container {
+  padding: 50px;
+}
+
+.links-container a {
+  color: var(--dark-desaturated-cyan);
 }
