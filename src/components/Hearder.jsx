@@ -8,11 +8,11 @@ function Header() {
   return(
     <div className="header">
       <img src={ logo } alt="sunnyside-agency-logo" />
-      <div className="links">
+      <nav className="links">
         { links.map((link, index) => (
           <a key={ index } href={ Repolink }> { link } </a>
         ))}
-      </div>
+      </nav>
     </div>
   );
 }
