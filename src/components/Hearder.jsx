@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../images/logo.svg'
+import logo from '../images/logo.svg';
+import hamburguerMenu from '../images/icon-hamburger.svg';
 
 function Header() {
   const Repolink = 'https://github.com/matheuscarvalhoscm/sunnyside-agency';
@@ -13,6 +14,12 @@ function Header() {
           <a key={ index } href={ Repolink }> { link } </a>
         ))}
       </nav>
+      <div className='hamburger-menu'>
+        <img
+          src={ hamburguerMenu }
+          alt='hamburguer-nav-bar'
+        />
+      </div>
     </div>
   );
 }
