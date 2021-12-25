@@ -16,8 +16,16 @@ function SecondSection() {
         </p>
         <a className='second-section-first-link' href={ Repolink }>LEARN MORE</a>
       </div>
-      <img src={ imageTransform } alt='Transform your brand' />
-      <img src={ imageStandOout } alt='Stand out to the right audience' />
+      <img
+        className='second-section-first-image'
+        src={ imageTransform }
+        alt='Transform your brand'
+      />
+      <img
+        className='second-section-second-image'
+        src={ imageStandOout }
+        alt='Stand out to the right audience'
+      />
       <div className='second-section-text-box'>
         <h2>Stand out to the right audience</h2>
         <p>
