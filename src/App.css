@@ -337,12 +337,30 @@ a {
   .second-section h2 {
     margin: 0;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    padding: px;
   }
 
   .second-section p {
     width: 100%;
     text-align: center;
     width: 80%;
+  }
+
+  .third-section {
+    flex-direction: column;
+  }
+
+  .graphic-design-container {
+    background: url('./images/mobile/image-graphic-design.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .photography-container {
+    background: url('./images/mobile/image-photography.jpg');
+    background-size: 100%;
+    width: 100%;
   }
 }
